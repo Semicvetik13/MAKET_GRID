@@ -1,0 +1,86 @@
+@media screen and (max-width: 44em){
+   .Main{
+      grid-template-columns: 1fr !important;
+      grid-template-rows: 1fr 1fr !important;
+   }
+   .Header,.Footer{
+      display: none;
+   }
+   .Menu{
+      background-color: white !important;
+      grid-row: 2 !important;
+      grid-column: 1 !important;
+   }
+   .Menu ul{
+      padding: 10px;
+   }
+   .Menu ul li{
+      display: inline !important;
+
+   }
+   .Content img{
+      float: none!important;
+      display: block!important;
+      width: 100%;
+      height: auto;
+      padding: 0 !important;
+   }
+   .Content{
+      background-image: none !important;
+      grid-row: 1 !important;
+      grid-column: 1 !important;
+   }
+}
+
+.Main{
+   display: grid;
+   grid-template-columns: 200px[left]  1fr[right];
+   grid-template-rows: 46px[top] 1fr[center] 46px[bottom];
+}
+.Header{
+grid-column: 1/right;
+background-color:  #add8e6;
+font-size: 22px;
+text-align: center;
+color: blue;
+padding: 10px;
+}
+.Menu{
+grid-column: 1;
+grid-row: center/top;
+background-color:  #f0e68c;
+}
+.Content{
+   grid-column: 2;
+   grid-row: center/top;
+   padding: 10px;
+   background-image: url(../image/ball.png);
+   background-repeat: repeat-y;
+   background-position: top right;
+   
+}
+.Menu span{
+   font-weight: bold;
+}
+
+.Content img{
+   float: left;
+   padding: 10px;
+
+}
+.Content span{
+   display: block;
+   font-weight: bold;
+   text-align: center
+
+}
+.Footer{
+   grid-column: 1/right;
+   grid-row: 3;
+   background-color:  #add8e6;
+   font-size: 22px;
+   text-align: center;
+   color: blue;
+   padding: 10px;
+}
+   
